@@ -7,20 +7,17 @@ match operator:
         result = num1 + num2
         print(f"The result is {result}.")
 
-match operator:
     case "-":
         result = num1 - num2
         print(f"The result is {result}.")
 
-match operator:
     case "*":
         result = num1 * num2
         print(f"The result is {result}.")
 
-match operator:
     case "/":
         if num2 == 0:
-            print("cannot divide by zero")
+            print("Cannot divide by zero")
         else:
             result = num1 / num2
             print(f"The result is {result}.")
