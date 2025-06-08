@@ -23,5 +23,5 @@ else:
     else:
         reminder += "."
 
-print("\n" + reminder)
+print(reminder)
 
