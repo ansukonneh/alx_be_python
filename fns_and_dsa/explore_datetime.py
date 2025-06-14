@@ -1,8 +1,9 @@
 from datetime import datetime, timedelta
-def current_date_time():
+
+def display_current_datetime():
     current_date = datetime.now()
     formatted_date = current_date.strftime("%Y-%m-%d %H:%M:%S")
-    print(f"Current date and time: {formatted_date}")
+    return formatted_date
 
 def calculate_future_date():
     try:
@@ -12,9 +13,10 @@ def calculate_future_date():
         return
     current_date = datetime.now()
     future_date = current_date + timedelta(days=days_to_add)
-    print("Future date:", future_date.strftime("%Y-%m-%d"))
+    formatted_future_date = future_date.strftime("%Y-%m-%d")
+    print("Future date:", formatted_future_date)
+    return formatted_future_date
 
 if __name__ == "__main__":
-    current_date_time()
+    print("Current date and time:", display_current_datetime())
     calculate_future_date()
- 
