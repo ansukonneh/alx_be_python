@@ -1,6 +1,6 @@
-from arimethic_operations import perform_operation
+from arithmetic_operations import perform_operation
 def main():
-    print("Arimethic Operation")
+    print("Arithmetic Operation")
     num1 = float(input("Enter the first number:"))
     num2 = float(input("Enter the second number:"))
     operation = input("Enter the operation (add, subtract, multiply, divide):").strip() .lower()
