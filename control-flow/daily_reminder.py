@@ -12,7 +12,7 @@ match priority:
     case _:
         priority_text = "a task with unspecified priority"
 
-# Determine urgency based on time-bound
+
 if time_bound == "yes":
     if priority in ("high", "medium"):
         urgency_text = " that requires immediate attention today!"
